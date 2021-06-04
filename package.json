@@ -1,3 +1,8 @@
 {
-  "name": "design-system-poc"
+  "name": "design-system-poc",
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "prettier": "^2.3.0",
+    "typescript": "^4.3.2"
+  }
 }
