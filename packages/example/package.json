@@ -1,6 +1,6 @@
 {
-  "name": "example",
-  "version": "0.0.1",
+  "name": "@sekyungk/example",
+  "version": "0.0.2",
   "description": "Design System Example",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,3 +1,3 @@
 export const example = (): string => {
-  return 'example';
+  return 'example2';
 };

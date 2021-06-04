@@ -23,15 +23,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."
       },
       {
-        "name": "example",
+        "name": "@sekyungk/example",
         "reference": "workspace:packages/example"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["design-system-poc", ["workspace:."]],
-      ["example", ["workspace:packages/example"]]
+      ["@sekyungk/example", ["workspace:packages/example"]],
+      ["design-system-poc", ["workspace:."]]
     ],
     "fallbackPool": [
     ],
@@ -168,6 +168,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "rollup"
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["@sekyungk/example", [
+        ["workspace:packages/example", {
+          "packageLocation": "./packages/example/",
+          "packageDependencies": [
+            ["@sekyungk/example", "workspace:packages/example"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["@tootallnate/once", [
@@ -1125,15 +1134,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esutils", "npm:2.0.3"]
           ],
           "linkType": "HARD",
-        }]
-      ]],
-      ["example", [
-        ["workspace:packages/example", {
-          "packageLocation": "./packages/example/",
-          "packageDependencies": [
-            ["example", "workspace:packages/example"]
-          ],
-          "linkType": "SOFT",
         }]
       ]],
       ["fast-deep-equal", [
