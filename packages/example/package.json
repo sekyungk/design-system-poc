@@ -1,0 +1,24 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "description": "Design System Example",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c ../../rollup.config.js",
+    "release": "npm publish"
+  },
+  "keywords": [],
+  "author": "sekyungk",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sekyungk/design-system-poc.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
