@@ -2,17 +2,16 @@
   "name": "design-system-poc",
   "private": true,
   "workspaces": [
-    "apps/*",
     "packages/*"
   ],
   "scripts": {
     "build": "yarn workspaces foreach run build",
     "build:example": "yarn workspace @sekyungk/example run build",
-    "release": "yarn workspaces foreach run release",
-    "next": "yarn workspace react-with-storybook run dev",
-    "storybook": "yarn workspace react-with-storybook run storybook"
+    "release": "yarn workspaces foreach run release"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "@typescript-eslint/eslint-plugin": "^4.26.0",
     "@typescript-eslint/parser": "^4.26.0",
     "eslint": "^7.27.0",
